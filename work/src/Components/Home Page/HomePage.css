@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan');
+@import url('https://fonts.googleapis.com/css2?family=Marmelad');
+.container {
+  width: 100%;
+  max-width: 1440px;
+}
 .navbar {
-    max-width: 1440px;
+  max-width: 1440px;
+  /* width: 100%; */
   display: flex;
-  grid-gap:8rem ;
-  padding: 40px 66px;
-  flex-wrap: wrap;
+  grid-gap: 0rem;
+  padding: 15px 66px;
   white-space: nowrap;
   align-items: center;
   background-color: #116871d1;
@@ -11,61 +18,117 @@
 
 .navbar-right {
   display: flex;
-  grid-gap:2rem ;
+  grid-gap: 2rem;
   justify-content: space-between;
   align-items: center;
 }
-.navbar-left{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-label {
   font-family: Mate;
+  font-weight: 100;
   font-size: 43px;
   color: white;
-  text-decoration: none;
   flex: 1;
   text-align: center;
+}
+
+.navbar-logo {
+  height: 100px;
+  position: relative;
+  top: 18px;
 }
 
 .bg-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 799px;
+  position: relative;
   /* width: 100%; */
 }
-.main-image{
-    width: 100%;
+.main-image {
+  width: 100%;
 }
 .overlay {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 110px;
-  /* background-color: black;
-  opacity: 0.5; */
+  top: 0px;
+  background-color: #116b7199;
+  opacity: 0.5;
   color: white;
   text-align: center;
   width: 100%;
-  height: 131.5%;
+  height: 713px;
   z-index: 1;
 }
 
+.getStarted-content {
+  bottom: 15rem;
+  left: 102px;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.getStarted-1 {
+  color: white;
+  font-family: 'Marmelad';
+  font-size: 73px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 64%;
+}
+.getStarted-2 {
+  color: white;
+  font-family: Kodchasan;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 59%;
+}
+.getStarted-3 {
+  display: flex;
+  align-items: center;
+  grid-gap: 1rem;
+  margin-top: 66px;
+  background-color: white;
+  width: 41.1%;
+  padding: 1px 10px;
+  padding-left: 35px;
+  border-radius: 35px;
+}
+.getStarted-label {
+  font-family: "Kodchasan";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  white-space: nowrap;
+}
 .btn {
   z-index: 22;
-  background-color: #4caf50;
+  background-color: #4db8b1;
+  box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.15),
+    0px 20px 20px rgba(0, 0, 0, 0.2), inset 0px -10px 10px rgba(0, 0, 0, 0.3),
+    inset 0px 10px 10px rgba(255, 255, 255, 0.2);
+  border-radius: 35px;
+  border: none;
   color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  padding: 20px 40px;
+  width: 245px;
+  height: 64px;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .services-container {
@@ -96,21 +159,21 @@
 }
 
 .client-container {
-    display: flex;
+  display: flex;
 }
 
-.client-img{
-    width:200px;
-    height:200px;
-    margin-right: 20px;
+.client-img {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
 }
 
-.client-text{
-    align-self: center;
+.client-text {
+  align-self: center;
 }
-.client-head{
-    display: flex;
-    justify-content: center;
+.client-head {
+  display: flex;
+  justify-content: center;
 }
 
 footer {

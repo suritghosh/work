@@ -1,11 +1,13 @@
 import React from "react";
 import "./HomePage.css";
-import logo from "./images/Logo.png";
+import logo from "./images/camera 1.png";
 import Rectangle2 from "./images/Rectangle 2.png";
 import Bank from "./images/Rectangle 50.png";
 import Finance from "./images/Rectangle 51.png";
 import Calculator from "./images/Rectangle 52.png";
 import Discuss from "./images/Discuss.png";
+import Arrow from "./images/Vector.png";
+
 export default function HomePage() {
   return (
     <div className="container">
@@ -33,13 +35,18 @@ export default function HomePage() {
         <img src={Rectangle2} alt="Logo" className="main-image" />
           <div className="overlay">
           </div>
-            <div className="gs-content">
-            <button className="btn" >Get Started</button>
+            <div className="getStarted-content">
+            <div className="getStarted-1">TECH ENABLED B2B PLATFORM</div>
+            <div className="getStarted-2">Transform vendor and supply chain management digitally.</div>
+            <div className="getStarted-3">
+            <div className="getStarted-label">Your email address</div>
+            <button className="btn" >GET STARTED <img src={Arrow} alt="arrow" /> </button>
+            </div>
             </div>
         </div>
       </div>
       <div className="section"></div>
-      {/* <div className="services">
+      <div className="services">
         <h1 className="service-heading">Our Services</h1>
         <div className="services-container">
           <div className="service">
@@ -60,8 +67,8 @@ export default function HomePage() {
             <label className="service-label">Service 3</label>
           </div>
         </div>
-      </div> */}
-      {/* <div className="our-clients-say">
+      </div>
+      <div className="our-clients-say">
         <h1 className="client-head">Our Clients Say</h1>
         <div className="client-container">
           <img src={Discuss} alt="Client" className="client-img" />
@@ -73,8 +80,8 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-      </div> */}
-      {/* <div className="footer">
+      </div>
+      <div className="footer">
         <footer>
           <div
             className="footer-section"
@@ -119,7 +126,7 @@ export default function HomePage() {
             </ul>
           </div>
         </footer>
-      </div> */}
+      </div>
     </div>
   );
 }
