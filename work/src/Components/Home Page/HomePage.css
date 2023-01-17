@@ -1,46 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Mate&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kodchasan');
-@import url('https://fonts.googleapis.com/css2?family=Marmelad');
+@import url("https://fonts.googleapis.com/css2?family=Mate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan");
+@import url("https://fonts.googleapis.com/css2?family=Marmelad");
+@import url("https://fonts.googleapis.com/css2?family=Krona%20One");
+@import url("https://fonts.googleapis.com/css2?family=Kanit");
 .container {
   width: 100%;
   max-width: 1440px;
 }
 .navbar {
-  max-width: 1440px;
-  /* width: 100%; */
   display: flex;
-  grid-gap: 0rem;
-  padding: 15px 66px;
-  white-space: nowrap;
-  align-items: center;
+  justify-content: space-between;
   background-color: #116871d1;
+  height: 106px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left img {
+  position: absolute;
+  width: 210px;
+  height: 134px;
+  left: 10px;
+  top: 10px;
 }
 
 .navbar-right {
   display: flex;
-  grid-gap: 2rem;
-  justify-content: space-between;
   align-items: center;
-}
-.navbar-left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-right: 50px;
 }
 
-.navbar-label {
+.navbar-item {
+  padding: 55px;
   font-family: Mate;
   font-weight: 100;
-  font-size: 43px;
   color: white;
-  flex: 1;
-  text-align: center;
-}
-
-.navbar-logo {
-  height: 100px;
-  position: relative;
-  top: 18px;
+  font-size: 36px;
+  cursor: pointer;
 }
 
 .bg-image {
@@ -53,6 +52,7 @@
 }
 .main-image {
   width: 100%;
+  background-size: contain;
 }
 .overlay {
   display: flex;
@@ -79,8 +79,8 @@
 }
 .getStarted-1 {
   color: white;
-  font-family: 'Marmelad';
-  font-size: 73px;
+  font-family: "Marmelad";
+  font-size: 51px;
   font-weight: 400;
   letter-spacing: 0em;
   text-align: left;
@@ -88,12 +88,12 @@
 }
 .getStarted-2 {
   color: white;
-  font-family: Kodchasan;
-  font-size: 36px;
+  font-family: "Kodchasan";
+  font-size: 26px;
   font-weight: 400;
   letter-spacing: 0em;
   text-align: left;
-  width: 59%;
+  width: 61%;
 }
 .getStarted-3 {
   display: flex;
@@ -101,7 +101,7 @@
   grid-gap: 1rem;
   margin-top: 66px;
   background-color: white;
-  width: 41.1%;
+  width: 46.1%;
   padding: 1px 10px;
   padding-left: 35px;
   border-radius: 35px;
@@ -110,7 +110,7 @@
   font-family: "Kodchasan";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   white-space: nowrap;
 }
 .btn {
@@ -123,14 +123,16 @@
   border: none;
   color: white;
   padding: 20px 40px;
-  width: 245px;
-  height: 64px;
-  font-size: 16px;
+  width: 181px;
+  height: 51px;
+  font-size: 13px;
   margin: 4px 2px;
   cursor: pointer;
   white-space: nowrap;
 }
-
+.btn img {
+  width: 13%;
+}
 .services-container {
   display: flex;
   justify-content: space-around;
@@ -147,35 +149,57 @@
   line-height: 54px;
   letter-spacing: 0em;
   text-align: left;
+  white-space: nowrap;
 }
 .service-heading {
   display: flex;
   justify-content: center;
-  font-family: Krona One;
+  font-family: "Krona One";
   font-size: 57px;
   font-weight: 400;
   line-height: 71px;
   letter-spacing: 0em;
 }
+.sector3 {
+  width: 25%;
+  position: relative;
+  bottom: 33px;
+  right: 45px;
+}
 
 .client-container {
   display: flex;
+  margin-bottom: 123px;
 }
 
 .client-img {
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
+  margin-left: 137px;
+  width: auto;
+  height: 308.64px;
+  border: white solid 10px;
+  box-shadow: 0px 2px 25px rgb(0 33 91 / 21%);
+  margin-right: 63px;
 }
 
 .client-text {
   align-self: center;
+  max-width: 54%;
 }
 .client-head {
   display: flex;
   justify-content: center;
+  font-family: Kanit;
+  font-weight: 600;
+  font-size: 55px;
+  color: #16213E;
 }
-
+.client-quote{
+  background-color:rgba(0, 30, 211, 1); 
+  width: 4.7%;
+  padding: 16px 25px;
+  position: relative;
+  bottom: 20px; 
+}
 footer {
   display: flex;
   justify-content: space-between;
