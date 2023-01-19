@@ -3,9 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Marmelad");
 @import url("https://fonts.googleapis.com/css2?family=Krona%20One");
 @import url("https://fonts.googleapis.com/css2?family=Kanit");
+@import url("https://fonts.googleapis.com/css2?family=Mitr");
+@import url("https://fonts.googleapis.com/css2?family=Lato");
 .container {
   width: 100%;
   max-width: 1440px;
+  scroll-behavior: smooth;
 }
 .navbar {
   display: flex;
@@ -161,7 +164,7 @@
   letter-spacing: 0em;
 }
 .sector3 {
-  width: 25%;
+  width: 31%;
   position: relative;
   bottom: 33px;
   right: 45px;
@@ -191,29 +194,105 @@
   font-family: Kanit;
   font-weight: 600;
   font-size: 55px;
-  color: #16213E;
+  color: #16213e;
 }
-.client-quote{
-  background-color:rgba(0, 30, 211, 1); 
-  width: 4.7%;
-  padding: 16px 25px;
+.client-quote img{
+  height: 69.84px;
+  width: 93.7px;
+  left: 0px;
+  bottom:  26.19px;
+  border-radius: 0px;
+
   position: relative;
-  bottom: 20px; 
+  bottom: 20px;
 }
-footer {
+
+.footer {
+  display: flex;
+}
+.footer-left {
+  width: 30%;
+  background-color: #d2153d;
+  padding: 17px;
+}
+.logo-container {
+  width: auto;
+  height: 178px;
+  position: relative;
+  right: 77px;
+}
+.details-container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 0.5rem;
+  margin-top: -65px;
+  position: relative;
+  left: 19px;
+}
+.venue {
+  font-family: "Mitr";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+p {
+  margin: unset;
+}
+.call-info {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #ebecee;
+}
+.phone-number {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  color: #ffffff;
+}
+.social-icons-container {
+  display: flex;
+  grid-gap: 1rem;
+  margin-top: 12px;
+}
+.social-icons {
+  height: 30.918312072753906px;
+  width: 40.70833206176758px;
+}
+.footer-right {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  background-color: #00215b;
+  width: 70%;
+  padding: 65px 100px;
 }
-
-.footer-section {
-  font-family: Kanit;
-  font-size: 22px;
+ul {
+  list-style: none;
+}
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-family: "Kanit";
+  font-style: normal;
   font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0px;
-  text-align: left;
-
-  flex: 1;
-  padding: 10px;
+  font-size: 22px;
+  color: #ffffff;
+}
+.links {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 17px;
+  color: #d4d7dd;
+  position: relative;
+  right: 15px;
+}
+.links ul {
+  line-height: 36px;
 }
