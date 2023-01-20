@@ -1,10 +1,11 @@
 .carousel {
     position: relative;
     overflow: hidden;
-    padding: 26px;
+    padding-bottom: 55px;
+    right: 10px;
 }
 
-.container {
+.review-container {
     padding: 0 10px;
     display: flex;
     overflow-x: hidden;
@@ -30,6 +31,8 @@
 
 .next-btn p,
 .pre-btn p {
+    position: relative;
+    top: 84px;
     font-size: 50px;
     background-color: rgba(255, 255, 255, 0.436);
     color: rgb(182, 182, 182);
@@ -47,7 +50,7 @@
 }
 .dot-container{
     display: flex;
-    font-size: 66px;
+    font-size: 28px;
     position: relative;
-    top: 38px;
+    bottom: 8px;
 }

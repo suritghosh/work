@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DotContainer from "./DotContainer.js";
+import DotContainer from "./DotContainer";
 import Mycard from "./MyCard.js";
 import "./ReviewCarousel.css";
 
@@ -7,7 +7,7 @@ export default function ReviewCarousel()  {
   const SliderData = [
     {
       review:
-        "Suspendisse tortor enim, varius et porttitor sit amet posuere vitae massa. Proin ac quam eu erat semper sagittis in vitae elit. Nam neque erat, semper vel ultrices in, finibus eu magna. Pellentesque habitant morbi",
+        "Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagittis in vitae elit. Nam neque erat, semper vel ultrices in, finibus eu magna. Pellentesque habitant morbi tristique",
       name: "Katy Grey",
     },
     {
@@ -26,7 +26,7 @@ export default function ReviewCarousel()  {
   const btnpressprev = () => {
     setCounter(counter === 0 ? length - 1 : counter - 1);
   };
-  console.log(counter);
+//   console.log(counter);
   const btnpressnext = () => {
     setCounter(counter === length - 1 ? 0 : counter + 1);
   };
@@ -39,7 +39,7 @@ export default function ReviewCarousel()  {
       <button className="next-btn" onClick={btnpressnext}>
         <p>⮞</p>
       </button>
-      <div className="container">
+      <div className="review-container">
         {SliderData.map((data, index) => {
           return (
             <div className={index === counter ? "slide-active" : "slide"}>

@@ -6,7 +6,6 @@ import Features from "./Features";
 import OurServices from "./OurServices";
 import OurClientSay from "./OurClientSay";
 import Footer from "./Footer";
-
 export default function HomePage() {
   return (
     <div className="container">
