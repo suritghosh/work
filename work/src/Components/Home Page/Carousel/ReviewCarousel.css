@@ -24,7 +24,11 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
 }
-
+@media only screen and (max-width: 768px){
+    .pre-btn,.next-btn{
+        top: 27px;
+    }
+}
 .next-btn {
     right: 0;
 }
@@ -39,6 +43,18 @@
     width: 50px;
     height: 50px;
     cursor: pointer;
+}
+@media only screen and (max-width: 936px){
+    .next-btn p,
+    .pre-btn p {
+        top: 70px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .next-btn p,
+    .pre-btn p {
+        top: 62px;
+    }
 }
 .slide-active{
     opacity: 1;

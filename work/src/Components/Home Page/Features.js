@@ -7,7 +7,7 @@ export default function Features() {
     <img
       src={Section}
       alt="section"
-      style={{ width: "100%", bottom: "101px", position: "relative" }}
+      style={{ width: "100%", bottom: "4px", position: "relative" }}
     />
   </div>
   )

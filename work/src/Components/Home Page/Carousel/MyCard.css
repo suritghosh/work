@@ -4,4 +4,8 @@
     right: 11px;
     flex-direction: column;
   }
-  
+  @media only screen and (max-width: 935px){
+    .clint-head{
+      font-size: 11px;
+    }
+  }

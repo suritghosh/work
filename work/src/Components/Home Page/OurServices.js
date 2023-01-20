@@ -8,28 +8,25 @@ export default function OurServices() {
   return (
     <div
         className="services"
-        style={{ position: "relative", bottom: "114px" }}
       >
         <h1 className="service-heading">OUR SERVICES</h1>
-        <div className="services-container">
-          <div className="service" style={{ marginLeft: "75px" }}>
+        <div className="services-container" style={{paddingTop:'100px',paddingLeft:'86px',paddingRight:'56px'}}>
+          <div className="service">
             <img src={Bank} alt="Service 1" />
             <br />
             <label className="service-label">Loan Provider</label>
           </div>
-          <div className="service" style={{ marginLeft: "72px" }}>
-            <img src={Finance} alt="Service 2" />
-            <br />
-            <img src={sector} alt="Sector-3 Noida" className="sector3" />
+          <div className="service" style={{ position:'relative',bottom:'69px' }}>
+            <img src={Finance} alt="Service 2" style={{width:'307px'}}/>
             <br />
             <label
               className="service-label"
-              style={{ position: "relative", bottom: "34px" }}
+              style={{ position: "relative", bottom: "72px" }}
             >
               Purchase Financing
             </label>
           </div>
-          <div className="service" style={{ marginRight: "23px" }}>
+          <div className="service">
             <img src={Calculator} alt="Service 3"  style={{width:'196px',position:'relative',bottom:'17px'}}/>
             <br />
             <label

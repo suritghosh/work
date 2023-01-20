@@ -7,7 +7,7 @@ export default function GetStarted() {
     <div className="get-started">
     <div className="bg-image">
       <img src={Rectangle2} alt="Logo" className="main-image" />
-      <div className="overlay"></div>
+      {/* <div className="overlay"></div> */}
       <div className="getStarted-content">
         <div className="getStarted-1">TECH ENABLED B2B PLATFORM</div>
         <div className="getStarted-2">
